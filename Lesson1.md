@@ -6,19 +6,24 @@
 
 ## Building Blocks
 1. Front End
-  * HTML
-  * CSS
-  * JavaScript
+  * **HTML**
+  * **CSS**
+  * **JavaScript**
+    * **JQuery**
+    * Backbone.js
 2. Back End
   1. Languages
     * **Python**
+      We'll be focusing on Python, since I know it best, and it's becoming an increasingly important language for web development.
+    * **JavaScript**
     * PHP, Perl, ASP.net
     * Ruby/Rails
     * Java/Scala/Go/C++
   2. Technologies
     * Web Servers
-      * Apache
+      * **Apache**
       * Nginx
+      * Tomcat
     * Operating Systems
       * Linux
     * Databases
@@ -40,5 +45,23 @@
   * RPC
   * API
 
-## Why We Care
-
+## What We'll Be Covering
+1. Web Development
+  1. Front End
+    * JavaScript/HTML/CSS
+    * JS Libraries: JQuery, Meteor.js, Backbone.js
+    * Front-End Frameworks: Bootstrap
+  2. Back End
+    * Django, Meteor, Node
+2. Data Science
+  1. Python
+    * Why Python
+    * How to program in Python
+    * Python goodies
+    * Dark Magic
+  2. APIs
+    * Twitter
+    * Facebook
+    * LinkedIn
+    * Web Pages
+  3. D3.js
