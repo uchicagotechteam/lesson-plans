@@ -10,11 +10,35 @@
   * CSS
   * JavaScript
 2. Back End
-  * **Python**
-  * Java
+  1. Languages
+    * **Python**
+    * PHP, Perl, ASP.net
+    * Ruby/Rails
+    * Java/Scala/Go/C++
+  2. Technologies
+    * Web Servers
+      * Apache
+      * Nginx
+    * Operating Systems
+      * Linux
+    * Databases
+      * Relational
+        * MySQL
+        * PostgreSQL
+        * Windows SQL Server
+      * Non-Relational
+        * MongoDB
+        * Redis
+        * HBase
+        * CouchDB
+    * Protocols
+      * TCP/IP
+      * HTTP, HTTPS
 3. Intermediate Layer
   * JSON
   * XML
-  * API 
+  * RPC
+  * API
 
-## Data Interchange Formats
+## Why We Care
+
