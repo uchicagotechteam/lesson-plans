@@ -1,7 +1,9 @@
 # What is the Internet?
 ## Networks
-The Internet consists entirely of a series of networked computers. 
-## Computers
+1. Servers
+2. Clients
+3. Serving Up Webpage
+
 ## Building Blocks
 1. Front End
   * HTML
@@ -14,4 +16,5 @@ The Internet consists entirely of a series of networked computers.
   * JSON
   * XML
   * API 
+
 ## Data Interchange Formats
