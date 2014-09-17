@@ -58,24 +58,3 @@
    * Scraping data from social networks
    * Making sense of Twitter and Facebook data
    * Performing analyses using NumPy and Pandas
-
-## What We'll Be Covering
-1. Web Development
-  1. Front End
-    * JavaScript/HTML/CSS
-    * JS Libraries: JQuery, Meteor.js, Backbone.js
-    * Front-End Frameworks: Bootstrap
-  2. Back End
-    * Django, Meteor, Node
-2. Data Science
-  1. Python
-    * Why Python
-    * How to program in Python
-    * Python goodies
-    * Dark Magic
-  2. APIs
-    * Twitter
-    * Facebook
-    * LinkedIn
-    * Web Pages
-  3. D3.js
