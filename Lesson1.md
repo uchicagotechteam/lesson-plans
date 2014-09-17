@@ -46,11 +46,18 @@
    * Example of Twitter API
 
 ## What We'll Be Covering
-
-## Networks
-1. Servers
-2. Clients
-3. Serving Up Webpage
+1. Web Development
+   * Building our own web page
+   * Starting off with HTML skeleton
+   * Adding CSS styling
+   * Proving motion with JS/JQuery
+2. Programming: Python
+   * Building basic Bank Account system
+   * Creating class that allows us to check how much we have in bank account
+3. Data Gathering
+   * Scraping data from social networks
+   * Making sense of Twitter and Facebook data
+   * Performing analyses using NumPy and Pandas
 
 ## What We'll Be Covering
 1. Web Development
