@@ -12,37 +12,45 @@
 2. Server
    * Request Handling
 
+## Browser
+1. Web Page Source
+   * Show how to see HTML/CSS/JS
+2. Rendering a web page
+   * Explain how HTML/CSS/JS work together to render a web page
+3. Chrome Dev Tools Example
+   * Boot up https://github.com/jakubtuchol and check out source
+
+## Building Blocks
+1. HTML
+   * Markup language for web
+   * Not very powerful by itself, but does provide fundamental building blocks
+2. CSS
+   * Styling for HTML pages
+   * Fundamental building block for all visual effects on the web
+3. JavaScript
+   * Simple scripting language for the web
+   * Every browser comes with built-in JS engine
+   * De-facto standard for front-end web development
+   * Also becoming popular for server-side development, thanks to projects like Node.js
+4. Python
+   * Simple, easy-to-use scripting language, very popular in web development
+   * Dynamically-typed, interpreted, not statically-typed, not compiled
+   * So much better than Java for web
+5. XML/JSON
+   * Data interchange formats, used by websites to communicate with browser
+   * XML is set of tags
+     * HTML is special case of XML
+   * JSON is more lightweight than XML, but a bit less readable
+6. API
+   * Not set of unified technologies, but an interface which you can use to access a site
+   * Example of Twitter API
+
+## What We'll Be Covering
+
 ## Networks
 1. Servers
 2. Clients
 3. Serving Up Webpage
-
-## Building Blocks
-1. Front End
-  * **HTML**
-  * **CSS**
-  * **JavaScript**
-    * **JQuery**
-    * Backbone.js
-2. Back End
-  1. Languages
-    * **Python**
-      We'll be focusing on Python, since I know it best, and it's becoming an increasingly important language for web development.
-    * **JavaScript**
-  2. Technologies
-    * Web Servers
-      * **Apache**
-    * Operating Systems
-      * Linux
-    * Databases
-    * Protocols
-      * TCP/IP
-      * HTTP, HTTPS
-3. Intermediate Layer
-  * JSON
-  * XML
-  * RPC
-  * API
 
 ## What We'll Be Covering
 1. Web Development
