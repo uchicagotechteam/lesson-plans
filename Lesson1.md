@@ -1,4 +1,10 @@
 # What is the Internet?
+## Workshop Objectives
+1. Understand what happens between typing web address in browser and seeing the webpage.
+2. Undestand the components and technologies in a webpage.
+3. Be able to look at source of a webpage.
+4. Be able to write simple script to interact with webpage.
+
 ## Networks
 1. Servers
 2. Clients
@@ -16,26 +22,12 @@
     * **Python**
       We'll be focusing on Python, since I know it best, and it's becoming an increasingly important language for web development.
     * **JavaScript**
-    * PHP, Perl, ASP.net
-    * Ruby/Rails
-    * Java/Scala/Go/C++
   2. Technologies
     * Web Servers
       * **Apache**
-      * Nginx
-      * Tomcat
     * Operating Systems
       * Linux
     * Databases
-      * Relational
-        * MySQL
-        * PostgreSQL
-        * Windows SQL Server
-      * Non-Relational
-        * MongoDB
-        * Redis
-        * HBase
-        * CouchDB
     * Protocols
       * TCP/IP
       * HTTP, HTTPS
