@@ -5,6 +5,13 @@
 3. Be able to look at source of a webpage.
 4. Be able to write simple script to interact with webpage.
 
+## Division
+1. Client
+   * Browser
+   * HTTP request
+2. Server
+   * Request Handling
+
 ## Networks
 1. Servers
 2. Clients
