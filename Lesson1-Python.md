@@ -43,3 +43,18 @@ greeting = 'Hello WORLD!'
 print(greeting.upper())
 print(greeting.lower())
 ```
+
+## Data Types
+Though Python allows us to assign various bits of data to variables, we have to understand that there are many different kinds of variables. Each of them has theire own purpose and behaves in a very different kind of way. Let's first get a handle on these different types of variables.
+```python
+var_1 = 'hello'
+var_2 = 23
+var_3 = 9.5
+var_4 = True
+
+print(type(var_1))
+print(type(var_2))
+print(type(var_3))
+print(type(var_4))
+```
+As we can see, we have a **string**, an **int**, a **float**, and a **bool**.
