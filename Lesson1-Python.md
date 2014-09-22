@@ -23,6 +23,12 @@ My primary goal is to provide you guys with a basic understanding of the things 
 ## What is Python?
 Python is a dynamically-typed, interpreted language. It's easy to use, it's reasonably fast, and allows you to quickly create very powerful programs. It's used in everything from large-scale data science to running some of the biggest websites in the world. We're going to focus on doing awesome things with Python over the next couple of weeks, but first we have to focus on the basic.
 
+## Our Setup
+### Virtual Machine
+
+### Which Python?
+
+
 ## Hello World!
 Open a text file named `hello.py`. Type into this file:
 ```python
@@ -31,9 +37,9 @@ print('Hello World!')
 We'll now execute this file by going into the directory where your file is being held and executing `python hello.py`.
 
 ## Variables
-Now, let's try assigning 'Hello World!' to a variable.
+It's hard to work with data if you can't keep track of it. In programming languages, we keep track of various bits of data using **variables**. This allows us to easily keep track of and reuse bits of data. Let's try assigning 'Hello World!' to a variable, and making some magic happen with it.
 ```python
 greeting = 'Hello WORLD!'
-print(greeting.upper)
-print(greeting.lower)
+print(greeting.upper())
+print(greeting.lower())
 ```
