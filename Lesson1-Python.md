@@ -12,8 +12,13 @@ My primary goal is to provide you guys with a basic understanding of the things 
 1. Python
 2. HTML/CSS/JavaScript
 3. JSON/XML
+4. Django
 
 ### APIs
 1. Twitter
 2. Facebook
 3. LinkedIn
+
+# Lesson Start
+## What is Python?
+Python is a dynamically-typed, interpreted language. It's easy to use, it's reasonably fast, and 
