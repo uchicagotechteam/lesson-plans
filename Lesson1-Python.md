@@ -57,4 +57,4 @@ print(type(var_2))
 print(type(var_3))
 print(type(var_4))
 ```
-As we can see, we have a **string**, an **int**, a **float**, and a **bool**.
+As we can see, we have a **string**, an **int**, a **float**, and a **bool**. Strings are the basic data type for all text. Ints are integer numbers, floats are numbers with floating-point decimals, and booleans are either `True` or `False`.
