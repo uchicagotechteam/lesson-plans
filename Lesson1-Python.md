@@ -21,4 +21,10 @@ My primary goal is to provide you guys with a basic understanding of the things 
 
 # Lesson Start
 ## What is Python?
-Python is a dynamically-typed, interpreted language. It's easy to use, it's reasonably fast, and 
+Python is a dynamically-typed, interpreted language. It's easy to use, it's reasonably fast, and allows you to quickly create very powerful programs. It's used in everything from large-scale data science to running some of the biggest websites in the world. We're going to focus on doing awesome things with Python over the next couple of weeks, but first we have to focus on the basic.
+
+## Hello World!
+Open a text file named 'hello.py'. Type into this file:
+```python
+print('Hello World!')
+```
