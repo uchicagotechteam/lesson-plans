@@ -184,6 +184,7 @@ A lot of the time, you don't want all of your code to execute all of the time. L
 ```python
 # height given in feet
 height = 10
+
 if height > 5:
    print "You're tall!"
 elif height == 5:
@@ -191,6 +192,31 @@ elif height == 5:
 else:
    print "You're short!"
 ```
+Okay, so what's happening here?
+```python
+# height given in feet
+height = 10
+
+if height > 5:
+   print "You're tall!"
+elif height == 5:
+   print "You're pretty average!"
+else:
+   print "You're short!"
+```
+Let's add on another intermediary statement that executes if the first `if` condition is not satisfied, but that we want to execute before just going whatever:
+```python
+# height given in feet
+height = 10
+
+if height > 5:
+   print "You're tall!"
+elif height == 5:
+   print "You're pretty average!"
+else:
+   print "You're short!"
+```
+As we can see, we use the `elif` keyword
 
 ## PostScript: Which Python?
 This is not super-important to us right now, but definitely worth mentioning, since you will run into this issue very, very soon. There is more than one implementation of Python, each one with very different backends. These implementations [Jython](http://en.wikipedia.org/wiki/Jython), [CPython](http://en.wikipedia.org/wiki/CPython), [PyPy](http://en.wikipedia.org/wiki/PyPy), and [IronPython](http://en.wikipedia.org/wiki/IronPython), each of which is worth exploring. 
