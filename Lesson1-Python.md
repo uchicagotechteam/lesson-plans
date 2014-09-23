@@ -57,7 +57,16 @@ print type(var_2)
 print type(var_3)
 print type(var_4)
 ```
-As you can see, we have 4 different variable types that 
+What we're doing here is assigning 4 different pieces of data to 4 different variables. We're then calling the built-in function `type` on these variables, and printing out the result. As you can see, we have 4 different types that we're printing out. To quickly explain each one:
+* **string**: Strings, generally contain textual data. Python provides a smorgasbord of functions to work with these.
+* **int**: Integral numbers, support basic mathematical operations.
+* **float**: Floating point numbers.
+* **bool**: Boolean values. Limited to either `True` or `False`.
+
+Despite these different types, Python allows you to stuff these into any variable, and silently detects and notes the data type. This allows you to do stuff like this:
+```python
+
+```
 Other languages make this pretty explicit. For example, let's take a look at how this works in [C](http://en.wikipedia.org/wiki/C_(programming_language)):
 ```c++
 int num = 1;
