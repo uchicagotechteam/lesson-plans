@@ -26,9 +26,6 @@ Python is a dynamically-typed, interpreted language. It's easy to use, it's reas
 ## Our Setup
 ### Virtual Machine
 
-### Which Python?
-
-
 ## Hello World!
 Open a text file named `hello.py`. Type into this file:
 ```python
@@ -97,7 +94,54 @@ This type stuff seems like mumbo-jumbo right now, but it matters because other l
 int num = 1;
 string greeting = "hello";
 ```
-As we can see, we have to explictly say that 
+As we can see, we have to explictly state the type of the variable before we actually use it. This means we can't write code like this without the compiler complaining very loudly:
+```c++
+int num_1 = 3;
+float num_2 = 3.14;
+float num_3 = num_1 + num_2;
+```
+Keep this type stuff in mind as we're going forward: it's all going to matter.
+
+## Comments
+Before we go any further, we need to remember that sometimes, it's worth explaining ourselves. I've had many, many situations where I've been presented with several thousand lines of raw code and spent weeks (sometimes months) making sense of it. As such, Python allows us leave comments in our code. You can make a single-line comment by adding `#` before some text:
+```python
+# this is a comment
+num_1 = 3
+print num_1
+```
+Note that the interpreter does nothing with this comment: it simply ignores it and moves on. Comments are simply for us to use to help ourselves and others better understand our code. We can also add in multi-line comments:
+```python
+"""
+This is a multi
+line comment
+"""
+greeting = "hello"
+'''
+This is also
+a really long comment
+'''
+```
+The proper amount of comments to include varies from place to place: I've worked in places that where comments are included in every other line and other places that regularly put out very complex programs with no comments. As a rule, add in as many comments as are necessary to make your code more readable, but not so many that your code becomes less readable. For example:
+```python
+# assigning first num
+num_1 = 3
+# printing first num
+print type(num_1)
+
+# assigning second num
+num_2 = 3.14
+# printing second num
+print type(num_2)
+
+# assigning third num
+num_3 = num_1 + num_2
+# printing third num
+print type(num_3)
+```
+Super not-readable. Limit yourself.
+
+## Number Operations
+We have the basics of 
 
 ## PostScript: Which Python?
 This is not super-important to us right now, but definitely worth mentioning, since you will run into this issue very, very soon. There is more than one implementation of Python, each one with very different backends. These implementations [Jython](http://en.wikipedia.org/wiki/Jython), [CPython](http://en.wikipedia.org/wiki/CPython), [PyPy](http://en.wikipedia.org/wiki/PyPy), and [IronPython](http://en.wikipedia.org/wiki/IronPython), each of which is worth exploring. 
