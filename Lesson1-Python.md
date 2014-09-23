@@ -32,7 +32,7 @@ Python is a dynamically-typed, interpreted language. It's easy to use, it's reas
 ## Hello World!
 Open a text file named `hello.py`. Type into this file:
 ```python
-print('Hello World!')
+print 'Hello World!'
 ```
 We'll now execute this file by going into the directory where your file is being held and executing `python hello.py`.
 
@@ -40,8 +40,8 @@ We'll now execute this file by going into the directory where your file is being
 It's hard to work with data if you can't keep track of it. In programming languages, we keep track of various bits of data using **variables**. This allows us to easily keep track of and reuse bits of data. Let's try assigning 'Hello World!' to a variable, and making some magic happen with it.
 ```python
 greeting = 'Hello WORLD!'
-print(greeting.upper())
-print(greeting.lower())
+print greeting.upper()
+print greeting.lower()
 ```
 
 ## Data Types
@@ -52,9 +52,14 @@ var_2 = 23
 var_3 = 9.5
 var_4 = True
 
-print(type(var_1))
-print(type(var_2))
-print(type(var_3))
-print(type(var_4))
+print type(var_1)
+print type(var_2)
+print type(var_3)
+print type(var_4)
 ```
 As we can see, we have a **string**, an **int**, a **float**, and a **bool**. Strings are the basic data type for all text. Ints are integer numbers, floats are numbers with floating-point decimals, and booleans are either `True` or `False`.
+
+## PostScript: Which Python?
+This is not super-important to us right now, but definitely worth mentioning, since you will run into this issue very, very soon. There is more than one implementation of Python, each one with very different backends. These implementations [Jython](http://en.wikipedia.org/wiki/Jython), [CPython](http://en.wikipedia.org/wiki/CPython), [PyPy](http://en.wikipedia.org/wiki/PyPy), and [IronPython](http://en.wikipedia.org/wiki/IronPython), each of which is worth exploring. 
+
+But what really matters is the version number. From 2000 to 2008, the Python 2.0 branch was the de-facto Python standard, and pretty much everyone used it. But in 2008, Guido Van Rossum (Python's Benevolent Dictator For Life) released Python 3.0, which broke backwards-compatibility with Python 2.X. This made a lot of people very angry, and a decision was made to continue development on Python 2.6, effectively creating two incompatible versions of Python. Currently, there are two primary versions of Python: 2.7.8 and 3.4.1.  Python 3 is the future of the language, and major software companies are in the middle of migrating to Python 3. Having said that, I am choosing to teach you guys Python 2. Most companies currently continue to run Python 2, and a number of pretty critical packages (packages that we're going to use) are only available for Python 2. The differences between the two Pythons are not major enough to make a massive difference when picking up the other version, but are significant enough that it does effect the way you write certain parts of your code. We can discuss more offline, but this is the current state of the world.
