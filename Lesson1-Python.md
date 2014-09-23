@@ -187,12 +187,10 @@ height = 10
 
 if height > 5:
    print "You're tall!"
-elif height == 5:
-   print "You're pretty average!"
-else:
-   print "You're short!"
 ```
-Okay, so what's happening here?
+Okay, so what's happening here? We're setting a variable, and then creating a block of code that checks if a certain condition is met (i.e. `height > 5`), and executes a print statement if it is met (i.e. `print "You're tall!"`). Things to note here are the colon (`:`) at the end of the condition check. This lets Python know that we're entering into a block of code that should be executed only when the condition line is true. Also note that we have put a **tab** before `print "You're tall!"`. Python separates code into blocks using whitespace, specifically tabs. The number of tabs located before a block of code determines what block this code is associated with. This is confusing now, but we'll give more examples to explain later.
+
+Let's say we want to let our person know that they are short if they're not over 5 feet tall. Let's add an `else` statement to make this happen:
 ```python
 # height given in feet
 height = 10
@@ -204,7 +202,7 @@ elif height == 5:
 else:
    print "You're short!"
 ```
-Let's add on another intermediary statement that executes if the first `if` condition is not satisfied, but that we want to execute before just going whatever:
+Let's say we want to let people who are 5 foot whatever know that they're not actually tall. Let's add on another intermediary statement that executes if the first `if` condition is not true, but if `height` is five feet:
 ```python
 # height given in feet
 height = 10
