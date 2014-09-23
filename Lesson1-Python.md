@@ -214,7 +214,31 @@ elif height == 5:
 else:
    print "You're short!"
 ```
-As we can see, we use the `elif` keyword
+As we can see, we use the `elif` keyword, we can add in another condition that checks and executes before the `else`.
+
+## Loops
+Let's say we want to do something very simple, like print out "Hello!" 10 times (we're very enthusiastic greeters). Let's try to make this happen:
+```python
+print "Hello!"
+print "Hello!"
+print "Hello!"
+print "Hello!"
+print "Hello!"
+print "Hello!"
+print "Hello!"
+print "Hello!"
+print "Hello!"
+print "Hello!"
+```
+But this is really no good. Let's fix this by writing a loop:
+```python
+for i in range(10):
+    print "Hello!"
+```
+What happens here is for each number in a range of 0 to 9, the code executes the `print` statment. To better understand this, let's examine `range` for a second:
+```python
+print range(10)
+```
 
 ## PostScript: Which Python?
 This is not super-important to us right now, but definitely worth mentioning, since you will run into this issue very, very soon. There is more than one implementation of Python, each one with very different backends. These implementations [Jython](http://en.wikipedia.org/wiki/Jython), [CPython](http://en.wikipedia.org/wiki/CPython), [PyPy](http://en.wikipedia.org/wiki/PyPy), and [IronPython](http://en.wikipedia.org/wiki/IronPython), each of which is worth exploring. 
