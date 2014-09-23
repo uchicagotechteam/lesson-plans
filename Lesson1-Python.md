@@ -153,15 +153,44 @@ print num_2
 print num_3
 print num_4
 ```
-Basic number operations: nothing revolutionary or that you haven't seen since grade school. Let's take it up a notch to exponentiation and modulo division:
+Basic number operations: nothing revolutionary or that you haven't seen since grade school. If we're working on making modifications to a single variable, we have a syntax that allows us to take a bit of a shortcut:
 ```python
-num_1 = 10 % 2
-num_2 = 2 ** 5
+var = 1
+
+var += 10
+print var
+
+var -= 5
+print var
+
+var *= 5
+print var
+
+var /= 10
+print var
+```
+This syntax allows us to cleanly do transformations on one variable without having to define both operatands. Let's take our math work up a notch to exponentiation and modulo division:
+```python
+num_1 = 10 % 2 # modulo division
+num_2 = 2 ** 5 # exponentiation
 
 print num_1
 print num_2
 ```
-As you can see, modulo
+As you can see, modulo (`%`) is simply remainder division, and exponentiation (`**`) is exactly what you'd expect.
+
+## Control Flow
+A lot of the time, you don't want all of your code to execute all of the time. Let's say we're trying to inform a person what we think of their height. Using this, we can do the following:
+```python
+# height given in feet
+height = 10
+if height > 5:
+   print "You're tall!"
+elif height == 5:
+   print "You're pretty average!"
+else:
+   print "You're short!"
+```
 
 ## PostScript: Which Python?
 This is not super-important to us right now, but definitely worth mentioning, since you will run into this issue very, very soon. There is more than one implementation of Python, each one with very different backends. These implementations [Jython](http://en.wikipedia.org/wiki/Jython), [CPython](http://en.wikipedia.org/wiki/CPython), [PyPy](http://en.wikipedia.org/wiki/PyPy), and [IronPython](http://en.wikipedia.org/wiki/IronPython), each of which is worth exploring. 
