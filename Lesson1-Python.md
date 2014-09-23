@@ -141,7 +141,27 @@ print type(num_3)
 Super not-readable. Limit yourself.
 
 ## Number Operations
-We have the basics of 
+We have the basics of variables, types, and comments down. Let's go ahead and do some calculations with these
+```python
+num_1 = 1 + 2
+num_2 = num_1 - 5
+num_3 = 8 * num_2
+num_4 = num_3 / 4
+
+print num_1
+print num_2
+print num_3
+print num_4
+```
+Basic number operations: nothing revolutionary or that you haven't seen since grade school. Let's take it up a notch to exponentiation and modulo division:
+```python
+num_1 = 10 % 2
+num_2 = 2 ** 5
+
+print num_1
+print num_2
+```
+As you can see, modulo
 
 ## PostScript: Which Python?
 This is not super-important to us right now, but definitely worth mentioning, since you will run into this issue very, very soon. There is more than one implementation of Python, each one with very different backends. These implementations [Jython](http://en.wikipedia.org/wiki/Jython), [CPython](http://en.wikipedia.org/wiki/CPython), [PyPy](http://en.wikipedia.org/wiki/PyPy), and [IronPython](http://en.wikipedia.org/wiki/IronPython), each of which is worth exploring. 
