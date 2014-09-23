@@ -45,7 +45,7 @@ print greeting.lower()
 ```
 
 ## Data Types
-Though Python allows us to assign various bits of data to variables, we have to understand that there are many different kinds of variables. Each of them has theire own purpose and behaves in a very different kind of way. Let's first get a handle on these different types of variables.
+Though Python allows us to assign various bits of data to variables, we have to understand that there are many different kinds of data that can be held within these variables. Let's investigate a bit with some variables:
 ```python
 var_1 = 'hello'
 var_2 = 23
@@ -57,6 +57,14 @@ print type(var_2)
 print type(var_3)
 print type(var_4)
 ```
+As you can see, we have 4 different variable types that 
+Other languages make this pretty explicit. For example, let's take a look at how this works in [C](http://en.wikipedia.org/wiki/C_(programming_language)):
+```c++
+int num = 1;
+string greeting = "hello";
+```
+Each of them has their own purpose and behaves in a very different kind of way. Let's first get a handle on these different types of variables.
+
 As we can see, we have a **string**, an **int**, a **float**, and a **bool**. Strings are the basic data type for all text. Ints are integer numbers, floats are numbers with floating-point decimals, and booleans are either `True` or `False`.
 
 ## PostScript: Which Python?
