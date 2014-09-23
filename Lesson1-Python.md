@@ -65,16 +65,39 @@ What we're doing here is assigning 4 different pieces of data to 4 different var
 
 Despite these different types, Python allows you to stuff these into any variable, and silently detects and notes the data type. This allows you to do stuff like this:
 ```python
+my_var = 2
+my_var = my_var + 2
+print my_var
+print type(my_var)
 
+my_var = True
+print my_var
+print type(my_var)
 ```
-Other languages make this pretty explicit. For example, let's take a look at how this works in [C](http://en.wikipedia.org/wiki/C_(programming_language)):
+As you can see, Python allows us to stuff completely different data types into the same variable. This kind of type inference can have some pretty interesting outcomes. Let's see an example:
+```python
+num_1 = 3
+print type(num_1)
+
+num_2 = 3.14
+print type(num_2)
+
+num_3 = num_1 + num_2
+print type(num_3)
+```
+Here we can see that Python automatically makes silent type conversions as necessary. There are situations, though, when not even these silent conversions will save a calculation. Let's check one out:
+```python
+val_1 = 3
+val_2 = 'hello'
+val_3 = val_1 + val_2
+```
+This calculation is going to die, and it dies loudly. Python can do type conversions, but only to a certain extent. At a certain level, it will just decide that the conversion is just not worth is, and will die. 
+This type stuff seems like mumbo-jumbo right now, but it matters because other languages make this pretty explicit. For example, let's take a look at how this works in [C++](http://en.wikipedia.org/wiki/C%2B%2B)):
 ```c++
 int num = 1;
 string greeting = "hello";
 ```
-Each of them has their own purpose and behaves in a very different kind of way. Let's first get a handle on these different types of variables.
-
-As we can see, we have a **string**, an **int**, a **float**, and a **bool**. Strings are the basic data type for all text. Ints are integer numbers, floats are numbers with floating-point decimals, and booleans are either `True` or `False`.
+As we can see, we have to explictly say that 
 
 ## PostScript: Which Python?
 This is not super-important to us right now, but definitely worth mentioning, since you will run into this issue very, very soon. There is more than one implementation of Python, each one with very different backends. These implementations [Jython](http://en.wikipedia.org/wiki/Jython), [CPython](http://en.wikipedia.org/wiki/CPython), [PyPy](http://en.wikipedia.org/wiki/PyPy), and [IronPython](http://en.wikipedia.org/wiki/IronPython), each of which is worth exploring. 
