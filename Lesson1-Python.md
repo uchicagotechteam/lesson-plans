@@ -239,6 +239,25 @@ What happens here is for each number in a range of 0 to 9, the code executes the
 ```python
 print range(10)
 ```
+We can see here that `range(10)` generates a list of 10 numbers, numbered from 0 to 9. Our `for` loop iterates over this list and perfroms the action we want once for every element within the list. To get a better grasp on this, let's try a slightly bit more involved loop:
+```python
+for i in range(10):
+    print i
+```
+Here we can see each of the elements in the range that are printed out. This isn't the only way to loop in Python: we can also try the `while` loop, which executes a piece of code as long as certain condition is true:
+```python
+i = 0
+while i < 10:
+      print i
+      i += 1
+```
+This has the exact same effect as the previous `for` loop, but works in a completely different way. While the for loop traversed over an **iterator** and executed once for each element in the iterator, the while loop executes the code block associated with it for as long as the loop condition is true. The above loop works just fine, but can be broken pretty easily:
+```python
+i = 0
+while i < 10:
+      print i
+```
+This is a pretty terrible idea. Since your `i` value is not being changed, `i` will always be less than 10, meaning that this loop will execute forever. There are some problems that you do want to execute 'forever' (or for some long period of time), but this is not one of them.
 
 ## PostScript: Which Python?
 This is not super-important to us right now, but definitely worth mentioning, since you will run into this issue very, very soon. There is more than one implementation of Python, each one with very different backends. These implementations [Jython](http://en.wikipedia.org/wiki/Jython), [CPython](http://en.wikipedia.org/wiki/CPython), [PyPy](http://en.wikipedia.org/wiki/PyPy), and [IronPython](http://en.wikipedia.org/wiki/IronPython), each of which is worth exploring. 
