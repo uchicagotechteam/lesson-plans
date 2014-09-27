@@ -1,37 +1,13 @@
-# What is the Internet?
-## Workshop Objectives
-1. Understand what happens between typing web address in browser and seeing the webpage.
-2. Undestand the components and technologies in a webpage.
-3. Be able to look at source of a webpage.
-4. Be able to write simple script to interact with webpage.
+# Program Overview
+## Program Goals
+My primary goal is to provide you guys with a basic understanding of the things that hold the internet together, and to provide you guys with a strong foundation in at least one programming language (Python, in this case). We're going to be focusing on gaining some level of mastery in the language, and then we'll be focusing on doing various data analysis tasks in the language. We'll also be focusing on interacting with various APIs, focusing primarily on Twitter and Facebook (LinkedIn if we have time).
 
-## Division
-1. Client
-   * Browser
-   * HTTP request
-2. Server
-   * Request Handling
+## Workshops
+1. Introduction to Python, Part I
+2. Introduction to Python, Part II
+3. Text Analysis
+4. Working with CSV/TSV Files
 
-## Browser
-1. Web Page Source
-   * Show how to see HTML/CSS/JS
-2. Rendering a web page
-   * Explain how HTML/CSS/JS work together to render a web page
-3. Chrome Dev Tools Example
-   * Boot up https://github.com/jakubtuchol and check out source
-
-## Building Blocks
-1. HTML
-   * Markup language for web
-   * Not very powerful by itself, but does provide fundamental building blocks
-2. CSS
-   * Styling for HTML pages
-   * Fundamental building block for all visual effects on the web
-3. JavaScript
-   * Simple scripting language for the web
-   * Every browser comes with built-in JS engine
-   * De-facto standard for front-end web development
-   * Also becoming popular for server-side development, thanks to projects like Node.js
 4. Python
    * Simple, easy-to-use scripting language, very popular in web development
    * Dynamically-typed, interpreted, not statically-typed, not compiled
