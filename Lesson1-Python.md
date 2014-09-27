@@ -256,6 +256,9 @@ while i < 10:
 ```
 This is a pretty terrible idea. Since your `i` value is not being changed, `i` will always be less than 10, meaning that this loop will execute forever. There are some problems that you do want to execute 'forever' (or for some long period of time), but this is not one of them.
 
+## Next Time
+Next week, we'll be talking about the key organizational bits that make Python so powerful. You don't quite have enough today to start making full problems, but next week, once we get enough under our belts, we'll be leaving with an assignment. Until next week.
+
 ## PostScript: Which Python?
 This is not super-important to us right now, but definitely worth mentioning, since you will run into this issue very, very soon. There is more than one implementation of Python, each one with very different backends. These implementations [Jython](http://en.wikipedia.org/wiki/Jython), [CPython](http://en.wikipedia.org/wiki/CPython), [PyPy](http://en.wikipedia.org/wiki/PyPy), and [IronPython](http://en.wikipedia.org/wiki/IronPython), each of which is worth exploring. 
 
