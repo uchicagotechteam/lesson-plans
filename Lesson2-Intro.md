@@ -46,9 +46,9 @@ def greeting(name):
 This allows us to (at least partially) ensure that we're eliminating type errors when calling our function. There's also another way to screw up our function call though:
 ```python
 greet()
-<span style="red">>> TypeError: greeting() takes exactly 1 argument (0 given)</span>
+<span style="red"> >>> TypeError: greeting() takes exactly 1 argument (0 given)</span>
 greet('Erin', 'Olivia')
-<span style="red">>> TypeError: greeting() takes exactly 1 argument (2 given)</span>
+<span style="red"> >>> TypeError: greeting() takes exactly 1 argument (2 given)</span>
 ```
 ## Lists
 Lists are a super-fundamental part of Python programming, and are **super** awesome. We saw a list last lesson:
