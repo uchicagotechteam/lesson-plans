@@ -26,7 +26,10 @@ def greet(name):
 greet('Olivia')
 greet('Erin')
 ```
-Let's explain what we're doing here a bit. First we 
+Let's explain what we're doing here a bit. First, we use the `def` keyword to tell the Python interpreter that we're about to create a function. The word after `def` is the function name, `greet`. After this, we put in parentheses the function **arguments**, which are the things that Python expects for us to input. This means that Python is expecting us to input a value for `name` each time we call the function `greet`. As we can see in the function call examples, we're inputting values that will act as the variable name when the function is called. We can perform this function call in several ways, and we can screw it up in several more:
+```python
+
+```
 ## Lists
 Lists are a super-fundamental part of Python programming, and are **super** awesome. We saw a list last lesson:
 ```python
