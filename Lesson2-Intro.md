@@ -36,9 +36,6 @@ greet(True) # this will also fail
 
 greet(str(68)) # this will work, since first converting argument to string
 greet(str(True)) # this will also work
-
-greet() # failing, because failed to pass an argument
-greet('Erin', 'Olivia')
 ```
 As you can see, the function can take another variable as an input instead of a raw value. We can also see that the function will fail on an integer input, and any other input that is not a string, returning the error `TypeError: cannot concatenate 'str' and 'int' objects`. We can fix this by converting the input into a string before calling the function. From this, we can see a pretty easy way to fix our original function:
 ```python
@@ -46,7 +43,13 @@ def greeting(name):
     input = str(name)
     print 'Hello, ' + input + '!'
 ```
-This allows us to 
+This allows us to (at least partially) ensure that we're eliminating type errors when calling our function. There's also another way to screw up our function call though:
+```python
+greet()
+<span style="red">>> TypeError: greeting() takes exactly 1 argument (0 given)</span>
+greet('Erin', 'Olivia')
+<span style="red">>> TypeError: greeting() takes exactly 1 argument (2 given)</span>
+```
 ## Lists
 Lists are a super-fundamental part of Python programming, and are **super** awesome. We saw a list last lesson:
 ```python
