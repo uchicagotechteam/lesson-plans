@@ -1,4 +1,4 @@
-77;10103;0c# Introduction, Part 2
+# Introduction, Part 2
 ## Lesson Overview
 Today, we'll be learning about the two basic building blocks of Python program o77;10103;0crganization: functions and classes. Once we have a basic hold on the two of these, we'll go ahead and start working on a basic project that utilizes all that we've learned thus far. But before we head into functions, we're going to cover the tow most important data structures in Python.
 
@@ -79,6 +79,7 @@ def add_double(num1, num2):
 add_double(4, 3)
 ```
 In this context, the function will exit before the last statement is called, meaning that nothing really happens after the `return` statement is called.
+
 We an also embed loops and other code blocks into our functions. Let's take a look at how we can embed loops into our functions by writing a function to check if a number is prime:
 ```python
 def is_divisible(num, divisor):
@@ -139,5 +140,23 @@ print techteamers[len(techteamers)] # fails
 print techteamers[len(techteamers) - 1]
 ```
 We can use this bracket syntax to access individual elements of our list. Note that there's something a bit strange going on here: the numbering of the elements in the list begins from 0 and ends at 1 less than the list length. Keep this in mind, since most programming languages do the same kind of zero-based indexing, and the sooner this becomes habit, the sooner you can avoid silly mistakes.
+
+Let's go ahead and try doing a bit of magic with lists. Let's write a function that find the minimum element in a list:
+```python
+'''
+assuming that the list is at 
+least 1 element long
+'''
+def minimum(nums):
+    minimum = nums[0]
+    for i in range(len(nums)):
+    	if nums[i] < minumum:
+	   minimum = nums[i]
+    return minimum
+
+numbers = [1, 3, 9, -4, 58, -19, 3, 85]
+print minimum(numbers)
+```
+This works by initializing the minimum value to the beginning of the list, and then goes through the list checking if each element is lower than the next. This is 
 
 ## Dictionaries
