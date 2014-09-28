@@ -81,9 +81,25 @@ add_double(4, 3)
 In this context, the function will exit before the last statement is called, meaning that nothing really happens after the `return` statement is called.
 We an also embed loops and other code blocks into our functions. Let's take a look at how we can embed loops into our functions by writing a function to check if a number is prime:
 ```python
+def is_divisible(num, divisor):
+    return num % divisor == 0
+
 def is_prime(num):
     for i in range(2, num):
-    	if 
+    	if is_divisible(num, i):
+	   return False
+    return True
+```
+This is pretty good. This loops through all of the numbers from 2 to one less than the input number and checks if this number can cleanly divide the input number. If none of these division checks work, then the program continues to return True. Note the layering of the code blocks: we can clearly see which code executes exactly where. Also note that `is_divisible` is a helper function that is used by `is_prime` to determine whether or not a function is divisible. We can make this a bit better: this doesn't check whether the number is less than 2, in which case it cannot be a prime number. Let's go ahead and fix that:
+```python
+def is_prime(num):
+    if num < 2:
+       return False
+
+    for i in range(2, num):
+    	if is_divisible(num, i):
+	   return False
+    return True
 ```
 
 ## Lists
