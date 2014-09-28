@@ -1,6 +1,6 @@
 # Introduction, Part 2
 ## Lesson Overview
-Today, we'll be learning about the two basic building blocks of Python program organization: functions and classes. Once we have a basic hold on the two of these, we'll go ahead and start working on a basic project that utilizes all that we've learned thus far. But before we head into functions, we're going to cover the tow most important data structures in Python.
+Today, we'll be learning about the two basic building blocks of Python program o77;10103;0crganization: functions and classes. Once we have a basic hold on the two of these, we'll go ahead and start working on a basic project that utilizes all that we've learned thus far. But before we head into functions, we're going to cover the tow most important data structures in Python.
 
 ## Functions
 Often times, we have a piece of code that we want to reuse multiple times. Let's say you want your program to easily be able to greet the user. The basic code for this would go like this:
@@ -46,9 +46,26 @@ def greeting(name):
 This allows us to (at least partially) ensure that we're eliminating type errors when calling our function. There's also another way to screw up our function call though:
 ```python
 greet()
-<span style="red"> >>> TypeError: greeting() takes exactly 1 argument (0 given)</span>
+>>> TypeError: greeting() takes exactly 1 argument (0 given)
 greet('Erin', 'Olivia')
-<span style="red"> >>> TypeError: greeting() takes exactly 1 argument (2 given)</span>
+>>> TypeError: greeting() takes exactly 1 argument (2 given)
+```
+From this error, we can see that `greeting` will not behave properly unless we provide it with the exact number of arguments that it expects. We've defined `greeting` to work with only one argument, so that's the way it's going to work. There is a way to hack this to allow a function to take variable numbers of arguments, but that's slightly more advanced Python than we're ready to cover right now. Let's go ahead and make some more functions:
+```python
+def generic_greet():
+    print 'Hello, world!'
+
+generic_greet()
+
+def add(num1, num2):
+    print str(num1 + num2)
+
+add(1, 4)
+```
+As we can see, we can define functions that take no arguments, and we can also define functions that take multiple arguments. We can also define functions that transform data and give us back results. Let's go back to the `add` function we just defined:
+```python
+def add(num1, num2):
+    return num1 + num2
 ```
 ## Lists
 Lists are a super-fundamental part of Python programming, and are **super** awesome. We saw a list last lesson:
