@@ -66,7 +66,20 @@ As we can see, we can define functions that take no arguments, and we can also d
 ```python
 def add(num1, num2):
     return num1 + num2
+
+number = add(2, 8)
+print number
 ```
+The `return` keyword does just what it says: it causes the function to return a piece of data that we can then go ahead and use. This is allows us to easily do some work on some data, and then quickly return it for further use. Note that a `return` statement will exit your function, so you really can't do something like this:
+```python
+def add_double(num1, num2):
+    return num1 + num2
+    num1 = num1 * 2
+
+add_double(4, 3)
+```
+In this context, the function will exit before the last statement is called, meaning that nothing really happens after the `return` statement is called.
+
 ## Lists
 Lists are a super-fundamental part of Python programming, and are **super** awesome. We saw a list last lesson:
 ```python
@@ -86,6 +99,7 @@ techteamers.append('Alita')
 techteamers.append('Audriana')
 techteamers.append('Carmin')
 techteamers.append('Darius')
+techteamers.append('Emma')
 techteamers.append('Erin')
 techteamers.append('Kevin')
 techteamers.append('Olivia')
@@ -93,7 +107,7 @@ techteamers.append('Yujia')
 
 print techteamers
 ```
-Calling the `append` function 
+Calling the `append` function on the `techteamers` list adds each of these elements
 
 ## Dictionaries
 
