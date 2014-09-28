@@ -28,8 +28,25 @@ greet('Erin')
 ```
 Let's explain what we're doing here a bit. First, we use the `def` keyword to tell the Python interpreter that we're about to create a function. The word after `def` is the function name, `greet`. After this, we put in parentheses the function **arguments**, which are the things that Python expects for us to input. This means that Python is expecting us to input a value for `name` each time we call the function `greet`. As we can see in the function call examples, we're inputting values that will act as the variable name when the function is called. We can perform this function call in several ways, and we can screw it up in several more:
 ```python
+name = 'Jakub'
+greet(name)
 
+greet(68) # this will fail
+greet(True) # this will also fail
+
+greet(str(68)) # this will work, since first converting argument to string
+greet(str(True)) # this will also work
+
+greet() # failing, because failed to pass an argument
+greet('Erin', 'Olivia')
 ```
+As you can see, the function can take another variable as an input instead of a raw value. We can also see that the function will fail on an integer input, and any other input that is not a string, returning the error `TypeError: cannot concatenate 'str' and 'int' objects`. We can fix this by converting the input into a string before calling the function. From this, we can see a pretty easy way to fix our original function:
+```python
+def greeting(name):
+    input = str(name)
+    print 'Hello, ' + input + '!'
+```
+This allows us to 
 ## Lists
 Lists are a super-fundamental part of Python programming, and are **super** awesome. We saw a list last lesson:
 ```python
