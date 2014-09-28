@@ -26,7 +26,8 @@ def greet(name):
 greet('Olivia')
 greet('Erin')
 ```
-Let's explain what we're doing here a bit. First, we use the `def` keyword to tell the Python interpreter that we're about to create a function. The word after `def` is the function name, `greet`. After this, we put in parentheses the function **arguments**, which are the things that Python expects for us to input. This means that Python is expecting us to input a value for `name` each time we call the function `greet`. As we can see in the function call examples, we're inputting values that will act as the variable name when the function is called. We can perform this function call in several ways, and we can screw it up in several more:
+Let's explain what we're doing here a bit. First, we use the `def` keyword to tell the Python interpreter that we're about to create a function. The word after `def` is the function name, `greet`. After this, we put in parentheses the function **arguments**, which are the things that Python expects for us to input. This means that Python is expecting us to input a value for `name` each time we call the function `greet`. Then we add a colon (`:`), which is the standard way to denote a code block that is associated with a given piece of code. Also note that all of the lines of code within the function are begun with a single tab. These tabs tell Python that these pieces of code are associated with this specific function. We then call 
+As we can see in the function call examples, we're inputting values that will act as the variable name when the function is called. We can perform this function call in several ways, and we can screw it up in several more:
 ```python
 name = 'Jakub'
 greet(name)
