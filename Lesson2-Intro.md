@@ -26,8 +26,7 @@ def greet(name):
 greet('Olivia')
 greet('Erin')
 ```
-Let's explain what we're doing here a bit. First, we use the `def` keyword to tell the Python interpreter that we're about to create a function. The word after `def` is the function name, `greet`. After this, we put in parentheses the function **arguments**, which are the things that Python expects for us to input. This means that Python is expecting us to input a value for `name` each time we call the function `greet`. Then we add a colon (`:`), which is the standard way to denote a code block that is associated with a given piece of code. Also note that all of the lines of code within the function are begun with a single tab. These tabs tell Python that these pieces of code are associated with this specific function. We then call 
-As we can see in the function call examples, we're inputting values that will act as the variable name when the function is called. We can perform this function call in several ways, and we can screw it up in several more:
+Let's explain what we're doing here a bit. First, we use the `def` keyword to tell the Python interpreter that we're about to create a function. The word after `def` is the function name, `greet`. After this, we put in parentheses the function **arguments**, which are the things that Python expects for us to input. This means that Python is expecting us to input a value for `name` each time we call the function `greet`. Then we add a colon (`:`), which is the standard way to denote a code block that is associated with a given piece of code. Also note that all of the lines of code within the function are begun with a single tab. These tabs tell Python that these pieces of code are associated with this specific function. We then call this function, passing in the **arguments** 'Olivia' and 'Erin'. Unfortunately we can't just pass in any values: there are a number of ways to screw this up. Let's see a couple of these examples:
 ```python
 name = 'Jakub'
 greet(name)
@@ -80,6 +79,12 @@ def add_double(num1, num2):
 add_double(4, 3)
 ```
 In this context, the function will exit before the last statement is called, meaning that nothing really happens after the `return` statement is called.
+We an also embed loops and other code blocks into our functions. Let's take a look at how we can embed loops into our functions by writing a function to check if a number is prime:
+```python
+def is_prime(num):
+    for i in range(2, num):
+    	if 
+```
 
 ## Lists
 Lists are a super-fundamental part of Python programming, and are **super** awesome. We saw a list last lesson:
