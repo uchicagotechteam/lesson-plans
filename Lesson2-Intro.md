@@ -157,6 +157,7 @@ def minimum(nums):
 numbers = [1, 3, 9, -4, 58, -19, 3, 85]
 print minimum(numbers)
 ```
-This works by initializing the minimum value to the beginning of the list, and then goes through the list checking if each element is lower than the next. This is 
+This works by initializing the minimum value to the beginning of the list, and then goes through the list checking if each element is lower than the next. When an element is lower than the current minimum, the new minimum is set to that element. Not how this function nests `for` loops and `if` conditionals within the function and within each other. Properly nesting functions and properly adding tab spacing and colons to ensure proper spacing is an integral part of mastering Python.
 
 ## Dictionaries
+In addition to lists, one of the other key data structures in Python is the **dictionary**. Dictionaries are Python's basic implementation of [hash tables](http://en.wikipedia.org/wiki/Hash_table), which are a data structure that allows you
