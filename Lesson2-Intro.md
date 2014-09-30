@@ -226,7 +226,18 @@ class Person(object):
 
       def say_hello(self):
       	  print 'Hello, my name is ' + self.name
-      
+
+yujia = Person()
+yujia.name = 'Yujia'      
+```
+Here we are initializing a 
+```python
+class Person(object):
+      def __init__(self, name, age, job, awesome):
+      	  self.name = name
+	  self.age = age
+	  self.job = job
+	  self.awesome = awesome
 ```
 
 Also, as a quick note for the future, whenever you want to find the methods/functions you can call on a given object, you can do this with the following:
