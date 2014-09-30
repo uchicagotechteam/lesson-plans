@@ -213,7 +213,21 @@ print person
 In the first instance, we called the `pop` method on `person` object, which removes the given key from the dictionary. We then called the built-in `del` method on the `person['major']` value to delete the key-value pair without returning anything.
 
 ## Classes
-I've mentioned **objects** a couple of times now, and it's high time I start explaining this madness. 
+I've mentioned **objects** a couple of times now, and it's high time I start explaining this madness. Python is an **object-oriented** language, which means that it allows you to create templates for data structure that contain their own functions (referred to as **methods** within a class perspective) and can be initialized at runtime. This is a really unsatisfying explanation, so let's jump into this head-first with an example. Let's consider the `person` dictionary we created last time, and try to expand it:
+```python
+class Person(object):
+      self.name = ''
+      self.age = 0
+      self.job = ''
+      self.awesome = False
+
+      def is_awesome(self):
+      	  return self.awesome
+
+      def say_hello(self):
+      	  print 'Hello, my name is ' + self.name
+      
+```
 
 Also, as a quick note for the future, whenever you want to find the methods/functions you can call on a given object, you can do this with the following:
 ```python
