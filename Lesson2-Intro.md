@@ -200,7 +200,20 @@ for key in person:
     print 'key: ' + key
     print 'value: ' + person[key]
 ```
-As we can see here, we first created an empty dictionary with the syntax `person = {}`. We then initialized elements within this dictionary by setting various elements within the dictionary to specific values.
+As we can see here, we first created an empty dictionary with the syntax `person = {}`. We then initialized elements within this dictionary by setting various elements within the dictionary to specific values. In fact, dictionaries are quite mutable: there are a number of methods to add and remove elements from dictionaries. Let's try some of these:
+```python
+person['job'] = 'student'
+
+person.pop('age')
+print person
+
+del(person['major'])
+print person
+```
+In the first instance, we called the `pop` method on `person` object, which removes the given key from the dictionary. We then called the built-in `del` method on the `person['major']` value to delete the key-value pair without returning anything.
+
+## Classes
+I've mentioned **objects** a couple of times now, and it's high time I start explaining this madness. 
 
 Also, as a quick note for the future, whenever you want to find the methods/functions you can call on a given object, you can do this with the following:
 ```python
