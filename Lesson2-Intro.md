@@ -201,3 +201,9 @@ for key in person:
     print 'value: ' + person[key]
 ```
 As we can see here, we first created an empty dictionary with the syntax `person = {}`. We then initialized elements within this dictionary by setting various elements within the dictionary to specific values.
+
+Also, as a quick note for the future, whenever you want to find the methods/functions you can call on a given object, you can do this with the following:
+```python
+dir(object)
+```
+This prints out a list of methods you can call on this object. This is super-super-useful in times of confusion.
