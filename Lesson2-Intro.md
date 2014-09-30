@@ -163,12 +163,27 @@ This works by initializing the minimum value to the beginning of the list, and t
 In addition to lists, one of the other key data structures in Python is the **dictionary**. Dictionaries are Python's basic implementation of [hash tables](http://en.wikipedia.org/wiki/Hash_table), which are a data structure that allows us to map a key to a value, and access elements within the dictionary via these keys. This may not make a whole lot of sense right now, so let's see an example:
 ```python
 capitals = {
-	 'Illinois': 'Chicago',
-	 'Alabama': 'Montgomery',
-	 'New York': 'Albany'
+	 'IL': 'Springfield',
+	 'AL': 'Montgomery',
+	 'NY': 'Albany',
+	 'CA': 'Sacramento'
 }
 
-print capitals['Illinois']
-print capitals['Alabama']
-print capitals['New York']
+print capitals['IL']
+print capitals['AL']
+print capitals['NY']
+print capitals['CA']
 ```
+Here, we're creating a data structure that associates some string **key** with some **value**. This allows us to get access to values by using the key input instead of a positional value in the list. This is awesome, because it provides the basis of some advanced data structures and allows us to get linear-time access into values. Let's try doing some magic with this:
+```python
+print capitals.keys()
+print captials.viewitems()
+
+# convenience method for determining if key in dictionary
+print ('AK' in capitals)
+
+for key in capitals:
+    print 'key: ' + key
+    print 'value: ' + capitals[key]
+```
+As we can see
