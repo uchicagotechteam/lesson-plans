@@ -186,4 +186,18 @@ for key in capitals:
     print 'key: ' + key
     print 'value: ' + capitals[key]
 ```
-As we can see
+As we can see from this, dictionaries come with a large number of convenience methods that we can use to view the elements and keys within a dictionary, and check whether or not a dictionary contains a certain element. We can also easily cycle through the keys of a dictionary and print its contents.
+
+Let's quickly explore a different syntax for intiializing and filling dictionaries:
+``python
+person = {}
+person['name'] = 'Yujia'
+person['age'] = 20
+person['major'] = 'math'
+person['awesome'] = True
+
+for key in person:
+    print 'key: ' + key
+    print 'value: ' + person[key]
+```
+As we can see here, we first created an empty dictionary with the syntax `person = {}`. We then initialized elements within this dictionary by setting various elements within the dictionary to specific values.
