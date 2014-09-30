@@ -189,7 +189,7 @@ for key in capitals:
 As we can see from this, dictionaries come with a large number of convenience methods that we can use to view the elements and keys within a dictionary, and check whether or not a dictionary contains a certain element. We can also easily cycle through the keys of a dictionary and print its contents.
 
 Let's quickly explore a different syntax for intiializing and filling dictionaries:
-``python
+```python
 person = {}
 person['name'] = 'Yujia'
 person['age'] = 20
