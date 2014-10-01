@@ -241,7 +241,8 @@ class Person(object):
 
 kevin = Person('Kevin', 20, 'student', True)
 ```
-Here, we're creating an initialization method for the class. By convention, methods that are only called within the class itself are written in the form `__method__`. The `__init__` method creates an initializer method, which is called as soon as an object is created. This method takes all of the variables provided into 
+Here, we're creating an initialization method for the class. By convention, methods that are only called within the class itself are written in the form `__method__`. The `__init__` method creates an initializer method, which is called as soon as an object is created. When you are creating an object, the init method takes variables passed to the object upon creation, and performs certain initialization tasks, such as setting class variables. 
+
 Also, as a quick note for the future, whenever you want to find the methods/functions you can call on a given object, you can do this with the following:
 ```python
 dir(object)
