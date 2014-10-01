@@ -5,11 +5,11 @@ My primary goal is to provide you guys with a basic understanding of the things 
 ## Workshops
 1. Introduction to Python, Part I
 2. Introduction to Python, Part II
-3. Text Analysis
+3. Text Analysis/Regular Expressions
 4. Working with CSV/TSV Files
 5. XML/JSON files
 6. Crawling web pages
 7. Twitter API
 8. Facebook API
-9. 
+9. Interacting with SQL databases
 10. 
