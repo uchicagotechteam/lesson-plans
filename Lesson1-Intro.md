@@ -18,7 +18,7 @@
 
 # Lesson Start
 ## What is Python?
-Python is a dynamically-typed, interpreted language. It's easy to use, it's reasonably fast, and allows you to quickly create very powerful programs. It's used in everything from large-scale data science to running some of the biggest websites in the world. We're going to focus on doing awesome things with Python over the next couple of weeks, but first we have to focus on the basic.
+Python is a dynamically-typed, interpreted language. It's easy to use, it's reasonably fast, and allows you to quickly create very powerful programs. It's used in everything from large-scale data science to running some of the biggest websites in the world. We're going to focus on doing awesome things with Python over the next couple of weeks, but first we have to focus on the basics.
 
 ## Our Setup
 ### Virtual Machine
@@ -85,7 +85,7 @@ val_1 = 3
 val_2 = 'hello'
 val_3 = val_1 + val_2
 ```
-This calculation is going to die, and it dies loudly. Python can do type conversions, but only to a certain extent. At a certain level, it will just decide that the conversion is just not worth is, and will die. 
+This calculation is going to die, and it dies loudly. Python can do type conversions, but only to a certain extent. At a certain level, it will just decide that the conversion is just not worth it, and will die. 
 This type stuff seems like mumbo-jumbo right now, but it matters because other languages make this pretty explicit. For example, let's take a look at how this works in [C++](http://en.wikipedia.org/wiki/C%2B%2B)):
 ```c++
 int num = 1;
