@@ -6,5 +6,9 @@ Generally, when working with a file in Python, you first have to open it and loa
 ```python
 text = open('mobydick')
 ```
+## File Methods
+
+## String Methods
+
 ## Regular Expressions
 ## 
