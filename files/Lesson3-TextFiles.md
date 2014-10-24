@@ -7,7 +7,7 @@ Generally, when working with a file in Python, you first have to open it and loa
 text = open('mobydick')
 ```
 ## File Methods
-Yujia do this
+
 ## String Methods
 
 ## Regular Expressions
