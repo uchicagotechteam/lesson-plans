@@ -108,7 +108,48 @@ Awesome. We've now got a super-straightforward list of lines. Let's go ahead and
 for line in lines:
     print len(lines)
 ```
-## String Methods
+Cool, let's go ahead and write a quick script that finds the length of the longest line in the file:
+```python
+def find_longest_line(file_obj):
+    lines = file_obj.readlines()
+    long_len = 0
+    for line in lines:
+    	if len(line) > long_len:
+	   long_len = len(line)
+    return long_len
 
+def main():
+    mobydick = open('mobydick.txt', 'r')
+    longest_line = find_longest_line(mobydick)
+    print 'The longest line in this text is ' + str(longest_line)
+    mobydick.close()
+
+if __name__ == '__main__':
+   main()
+```
+All of this should more or less make sense. Just a quick note about the last bit:
+```python
+if __name__ == '__main__':
+   main()
+```
+Before, we've been putting our entry methods onto the top level of our script. Previously, our script would look like this:
+```python
+def find_longest_line(file_obj):
+    lines = file_obj.readlines()
+    long_len = 0
+    for line in lines:
+    	if len(line) > long_len:
+	   long_len = len(line)
+    return long_len
+
+
+mobydick = open('mobydick.txt', 'r')
+longest_line = find_longest_line(mobydick)
+print 'The longest line in this text is ' + str(longest_line)
+mobydick.close()
+```
+
+## String Methods
+Very cool, so we've just found the longest line. We can now
 ## Regular Expressions
 ## 
