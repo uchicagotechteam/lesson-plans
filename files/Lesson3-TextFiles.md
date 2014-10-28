@@ -21,6 +21,10 @@ This is the path to get to my current location from the root of the filesystem.
 
 The second, abbreviated directory address is equally interesting. This path begins with a `~`, which is an alias for my home folder. The shell is not configured to launch from the root directory, since the root contains many mission-critical folders, which could destroy your OS if removed. As such, most of your work is going to be done in your working directory, which is generally located at `/home/yourcomputername`. 
 
+The first address is the absolute address of the directory. This address explicitly describes the path to the directory of interest from the filesystem root. The second address is the relative address. This describes the path to the directory of interest from the current directory.
+
+Note that when describing the relative address, there are two important shortcuts. The first is `..`, which refers to the directory directly above the current directory, i.e. the current directory's 'parent directory'. We will see ways to use this when moving around the directory shortly. The second is `.`, which refers to the current directory. While seldom used when traversing the directory tree, this is more often used when running commands that you want to act upon the current directory.
+
 ### Listing Files
 Whenever you're in a directory, the first thing you usually want to do is figure out what is located in it. You do this by typing the command
 ```bash
@@ -30,15 +34,18 @@ This command simply lists all files within the directory. We can also provide ab
 ```bash
 ls /home
 ls ~/School
+ls ../classes/statistics
 ```
 
 ### Moving Around The Filesystem
-In order to figure out the filesystem, we need to move around it as well as figure out where we are. We do this via the `cd` command (which simply changes the directory in which you are currently working:
+In order to figure out the filesystem, we need to move around it as well as figure out where we are. We do this via the `cd` command (which simply changes the directory in which you are currently working. In order to change your directory, we have to give `cd` a paramter of the form a directory path, either absolute or relative:
 ```bash
-cd
-cd ..
+cd School
+cd ../Projects
 cd 
 ```
+Running `cd` without a parameter automatically returns you to your home directory, i.e. the directory described by `~`. This can be very useful when you just want to get back to your home directory without having to type in long directory paths.
+
 ## Opening files
 Generally, when working with a file in Python, you first have to open it and load it into memory. We can do this using the built-in `open` method:
 ```python
