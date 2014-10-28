@@ -46,10 +46,45 @@ cd
 ```
 Running `cd` without a parameter automatically returns you to your home directory, i.e. the directory described by `~`. This can be very useful when you just want to get back to your home directory without having to type in long directory paths.
 
-## Opening files
+### Making Directories
+
+## Files in Python
+### Preparation
+To start, let's go ahead and create ourselves a directory to work in:
+```bash
+cd
+cd Documents
+mkdir techteam
+cd techteam
+mkdir text
+cd text
+```
+Cool, so we're now in our directory of interest. Now, let's got ahead and download the files we'll be working with. To do this, we're going to use the `wget` utility to download two URLs:
+```bash
+wget https://raw.githubusercontent.com/uchicagotechteam/lesson-plans/master/files/mobydick.txt
+wget https://raw.githubusercontent.com/uchicagotechteam/lesson-plans/master/files/access_log
+```
+If we now use `ls` to check the contents of our directory, we should see two new files: `mobydick.txt` and `access_log`. We can check out the contents of these files by just looking at the first couple of lines:
+```bash
+head mobydick.txt
+head access_log
+```
+We can see that one is, as expected, the great novel Moby Dick and a bunch of text we don't quite understand. We'll do some cool things with these files, but let's get started with something fairly straightforward.
+
+### Opening Files
 Generally, when working with a file in Python, you first have to open it and load it into memory. We can do this using the built-in `open` method:
 ```python
-text = open('mobydick')
+mobydick = open('mobydick')
+type(mobydick)
+dir(mobydick)
+```
+As we can see from the output of our `dir` method, there's quite a lot we can do with out file. For now, we're going to go ahead and close and reopen it.
+```python
+mobydick.close()
+```
+It's generally good practice to close your files once you're done with them. We want to make sure that we don't do anything stupid with our file while we're working with it, so we're going to go ahead and open it in read-only mode:
+```python
+mobydick = open('mobydick', 'r')
 ```
 ## File Methods
 
