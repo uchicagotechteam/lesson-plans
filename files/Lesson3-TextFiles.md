@@ -19,7 +19,21 @@ home -> jtuchol -> School -> techteam -> lesson-plans -> files
 ```
 This is the path to get to my current location from the root of the filesystem.
 
-The second, abbreviated directory address is equally interesting. This path begins with a `~`, which is an abbreviation for my home folder. The shell is configured to launch not in out 
+The second, abbreviated directory address is equally interesting. This path begins with a `~`, which is an alias for my home folder. The shell is not configured to launch from the root directory, since the root contains many mission-critical folders, which could destroy your OS if removed. As such, most of your work is going to be done in your working directory, which is generally located at `/home/yourcomputername`. 
+
+### Listing Files
+Whenever you're in a directory, the first thing you usually want to do is figure out what is located in it. You do this by typing the command
+```bash
+ls
+```
+This command simply lists all files within the directory. We can also provide absolute and relative addresses to the command as parameters:
+```bash
+ls /home
+ls ~/School
+```
+
+### Moving Around The Filesystem
+In order to figure out the filesystem, we need to move around it as well as figure out where we are. We do this via the `cd` command (which simply changes the directory in which you are currently working:
 ```bash
 cd
 cd ..
