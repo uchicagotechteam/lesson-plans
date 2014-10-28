@@ -86,6 +86,13 @@ It's generally good practice to close your files once you're done with them. We 
 ```python
 mobydick = open('mobydick', 'r')
 ```
+You can open files in several different modes, depending on what you want to do with them:
+* `r` = read-only: cannot modify file, can only read in
+* `w` = write-only: overwrites all contents in file
+* `rw` = read-write: can read and write to file
+* `a` = append: appends onto file, useful if don't want to overwrite past contents
+Cool, so we've got an open file, so let's go ahead and do something with it.
+
 ## File Methods
 
 ## String Methods
