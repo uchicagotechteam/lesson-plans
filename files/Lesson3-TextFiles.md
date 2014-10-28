@@ -94,7 +94,20 @@ You can open files in several different modes, depending on what you want to do 
 Cool, so we've got an open file, so let's go ahead and do something with it.
 
 ## File Methods
-
+Let's first go ahead and run find a way to store all the lines within our file:
+```python
+lines = mobydick.readline()
+```
+The `readlines` method simply breaks the file up into lines and returns a list of lines. Let's take a look to make sure this is the case.
+```python
+len(lines)
+lines[1]
+```
+Awesome. We've now got a super-straightforward list of lines. Let's go ahead and run through these.
+```python
+for line in lines:
+    print len(lines)
+```
 ## String Methods
 
 ## Regular Expressions
