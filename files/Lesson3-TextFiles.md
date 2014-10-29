@@ -159,6 +159,35 @@ print lines[1]
 for word in words:
     print word
 ```
-The `split` method splits a string into individual words by the whitespace within the string. This is hugely useful and can give us a lot of wins
+The `split` method splits a string into individual words by the whitespace within the string. This is hugely useful and can give us a lot of wins.
+
+But there is a slight problem here. Each line ends with a special character denoting carriage returns, i.e. `\r\n`. We want to get rid of these suckers. As such, we're going to use the `strip` method to get rid of all the cruft at the end of the line:
+```python
+words = lines[1].strip().split()
+print lines[1]
+
+for word in words:
+    print word
+```
+Let's go ahead and plug this into our initial script, and start working on finding the longest word:
+```python
+def find_longest_word(file_obj):
+    lines = file_obj.readlines()
+    long_len = 0
+    for line in lines.strip():
+    	for word in lines.split():
+	    if len(line) > long_len:
+	       long_len = len(line)
+    return long_len
+
+def main():
+    mobydick = open('mobydick.txt', 'r')
+    longest_line = find_longest_line(mobydick)
+    print 'The longest line in this text is ' + str(longest_line)
+    mobydick.close()
+
+if __name__ == '__main__':
+   main()
+```
 ## Regular Expressions
 ## 
