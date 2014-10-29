@@ -148,8 +148,17 @@ longest_line = find_longest_line(mobydick)
 print 'The longest line in this text is ' + str(longest_line)
 mobydick.close()
 ```
+Now we have moved all of our top-level code into a main method. In computer-speak, we've 'encapsulated' the methods. Why is not important to us right now, but we will write all of our files from now on using this `main` method and `if name == 'main'` line.
 
 ## String Methods
-Very cool, so we've just found the longest line. We can now
+Very cool, so we've just found the longest line. We can now go ahead and find the longest word in the file? In order to do this, we're going to have to do a bit of work with the individual lines themselves. Python thankfully has a number of extraordinarily powerful methods for working with strings. If we want to split the strings into the individual words, we can simply do the following:
+```python
+words = lines[1].split()
+print lines[1]
+
+for word in words:
+    print word
+```
+The `split` method splits a string into individual words by the whitespace within the string. This is hugely useful and can give us a lot of wins
 ## Regular Expressions
 ## 
