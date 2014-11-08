@@ -59,3 +59,15 @@ for row in csv_f:
 As we can see, each row is returned as a list, and we can go through these lists to find
 the data that we want.
 
+We can also access files to write to them with the `csv` module.
+
+```CSV
+import csv
+
+f = open('file.csv', 'wb')
+
+csv_f = csv.writer(f)
+csv_f.writerow(['Smith','John','The Foot Book'])
+
+f.close
+```
