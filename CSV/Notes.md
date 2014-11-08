@@ -29,14 +29,14 @@ salaries['Salary'].min()
 Grouping by Departments and Finding Values
 ```python
 by_dept = salaries.groupby('Department')
-by_posn = salaries.groupby(‘Position’)
+by_posn = salaries.groupby('Position')
 by_posn2 = salaries.groupby(['Department', 'Position'])
-by_dept[‘Salary’].describe()
-by_dept[‘Salary’].mean()
-by_dept[‘Salary’].max()
-by_dept[‘Salary’].min()
-by_dept[‘Salary’].std()
-by_dept[‘Salary’].median
+by_dept['Salary'].describe()
+by_dept['Salary'].mean()
+by_dept['Salary'].max()
+by_dept['Salary'].min()
+by_dept['Salary'].std()
+by_dept['Salary'].median
 for name, group in by_posn2:
 	print(name)
 	print(group[‘Salary’].mean())
