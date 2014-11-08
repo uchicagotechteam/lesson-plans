@@ -61,7 +61,7 @@ the data that we want.
 
 We can also access files to write to them with the `csv` module.
 
-```CSV
+```python
 import csv
 
 f = open('file.csv', 'wb')
