@@ -1,6 +1,7 @@
 # CSV Files
-CSV stands for comma separated value.  A CSV file consists of rows of data, where each row
- contains a few values separated by a comma.  
+CSV stands for comma separated value.  A CSV file consists of rows of data, where each row 
+contains a few values separated by a comma. It is the most common import and export format
+ for spreadsheets and databases.  
  
  ```CSV
  Tucholski,Jakub,Moby Dick
