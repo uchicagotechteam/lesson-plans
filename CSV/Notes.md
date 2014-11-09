@@ -39,8 +39,8 @@ by_dept['Salary'].std()
 by_dept['Salary'].median
 for name, group in by_posn2:
 	print(name)
-	print(group[‘Salary’].mean())
-	print(group[‘Salary’].std())
+	print(group['Salary'].mean())
+	print(group['Salary'].std())
 ```
 
 
