@@ -34,9 +34,8 @@ Create data structure.
 
 Let's print the data to the terminal, and also its type.
 
-`print 'MINWAGE DATA', (minwage_data)`
-
-`print type(minwage_data)`
+    print 'MINWAGE DATA', (minwage_data)
+    print type(minwage_data)
 
 There are two main functions in the json library...
 
@@ -44,18 +43,15 @@ There are two main functions in the json library...
 
 The json.dumps function takes a Python data structure to a json structure. This process is sometimes called encoding.
 
-`json_encoded = json.dumps(minwage_data)`
-
-`print json_encoded`
-
-`print type(json_encoded)`
+    json_encoded = json.dumps(minwage_data)
+    print json_encoded
+    print type(json_encoded)
 
 ### json.loads
 
 The json.loads function takes a json structure to a Python data structure. This process is sometimes called decoding.
 
-`decoded_data = json.loads(json_encoded)`
+    decoded_data = json.loads(json_encoded)
+    print decoded_data
+    print type(json_encoded)
 
-`print decoded_data`
-
-`print type(json_encoded)`
