@@ -1,4 +1,16 @@
 # Using Pandas
+
+To install pandas:
+
+1. Install pip:
+```shell
+sudo easy-install pip
+```
+2. Install pandas using pip:
+```shell
+pip install pandas
+```
+
 ```python
 import pandas as pd
 
