@@ -37,7 +37,7 @@ If you don't have `pandas`, it is easy to install.
 *in the shell:*
 ```shell
 $ sudo easy-install pip
-$pip install pandas
+$ pip install pandas
 ```
 
 Since a CSV file is a list of rows of lists, it would be easier if we could read these files
