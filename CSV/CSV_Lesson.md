@@ -32,6 +32,13 @@ file as a string.
 ```python
 Moby_Dick = f.read()
 ```
+If you don't have `pandas`, it is easy to install.
+
+*in the shell:*
+```shell
+$ sudo easy-install pip
+$pip install pandas
+```
 
 Since a CSV file is a list of rows of lists, it would be easier if we could read these files
 in a format more fit for data.  One way to do this is with the `pandas` library.  This library is one of the most useful tools
