@@ -4,11 +4,11 @@ To install pandas:
 
 1. Install pip:
 ```shell
-sudo easy-install pip
+$ sudo easy-install pip
 ```
 2. Install pandas using pip:
 ```shell
-pip install pandas
+$ pip install pandas
 ```
 
 ```python
