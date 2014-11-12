@@ -1,3 +1,65 @@
+# Sys Module
+Let's go ahead and generalize this for any file, and allow our script to take in a filepath from the command line. To do this, we're going to have to make use of some system modules. Python has a robust set of modules that we can use in our scripts. In order to make use of them, we're going to have to import them. We're going to change up our script by importing the OS module and having it take in the initial argument from the command line.
+```python
+import sys
+
+def find_longest_word(file_obj):
+    lines = file_obj.readlines()
+    long_len = 0
+    for line in lines.strip():
+    	for word in lines.split():
+	    if len(line) > long_len:
+	       long_len = len(line)
+    return long_len
+
+def main():
+    filename = sys.argv[1]
+    inputfile = open(filename, 'r')
+    longest_word = find_longest_word(inputfile)
+    print 'The longest word in this ' + filename + ' is ' + str(longest_word)
+    inputfile.close()
+
+if __name__ == '__main__':
+   main()
+```
+Cool, now we can run this as such:
+```
+python longword.py mobydick.txt
+```
+Awesome.
+
+But we have a slight problem here. What if try to run this on a file that does not exist? What happens then?
+```
+python longword.py
+```
+This fails, so let's go ahead and check to see if something works.
+
+```python
+import sys
+import os
+
+def find_longest_word(file_obj):
+    lines = file_obj.readlines()
+    long_len = 0
+    for line in lines.strip():
+    	for word in lines.split():
+	    if len(line) > long_len:
+	       long_len = len(line)
+    return long_len
+
+def main():
+    filename = sys.argv[1]
+    if not os.path.exists(filename):
+       sys.exit(1)
+       
+    inputfile = open(filename, 'r')
+    longest_word = find_longest_word(inputfile)
+    print 'The longest word in this ' + filename + ' is ' + str(longest_word)
+    inputfile.close()
+
+if __name__ == '__main__':
+   main()
+```
 # CSV Files
 CSV stands for comma separated value.  A CSV file consists of rows of data, where each row 
 contains a few values separated by a comma. It is the most common import and export format
