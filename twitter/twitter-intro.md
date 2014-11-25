@@ -21,9 +21,25 @@ But it's likely that others won't feel comfortable giving you their secret deets
 called **OAuth**. It's pretty standardized, so if you work with other APIs in the future, you'll probably run into this
 again.
 
-* [Explain consumer key, consumer secret, access token, access token secret]
+Firstly, let's go ahead and create the basic skeleton of this:
+```python
+import twitter
+
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+OAUTH_TOKEN = ''
+OAUTH_TOKEN_SECRET = ''
+
+auth = twitter.oauth.OAuth(OAUTH_TOKEN, OAUTH_TOKEN_SECRET,
+       					CONSUMER_KEY, CONSUMER_SECRET)
+					
+# nothing to see by displaying twitter_api except that it's now a
+# defined variable
+```
+We've now successfully connected to the api and passed in our authorization tokens.
 
 ### What's Trending
+
 ### Searching for Tweets
 
 ## Analyzing Tweets
