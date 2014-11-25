@@ -118,8 +118,67 @@ print(json.dumps(statuses[0], indent=1))
 ```
 Let's extract the text, screen names, and has tags from tweets
 ```python
-```
+status_texts = [status['text']
+	     for status in statuses]
+screen_names = [user_mention['screen_name']
+	     for status in statuses
+	     	 for user_mention in status['entities']['hashtags']]
 
+# compute a collection of all words from all tweets
+words = [ w
+      	for t in status_texts
+	    for w in t.split()]
+
+# explore the first 5 items for each
+print(json.dumps(status_texts[0:5], indent=1))
+print(json.dumps(screen_names[0:5], indent=1))
+print(json.dumps(hashtags[0:5], indent=1))
+print(json.dumps(word[0:5], indent=1))
+```
+Let's create a basic frequency distribution from the words in tweets
+```python
+from collections import Counter
+
+for item in [words, screen_name, hashtags]:
+    c = Counter(item)
+    print(c.most_common()[:10]) # top 10
+    print()
+```
+Use prettytable to display tuples in nice tabular format
+```python
+from prettytable import PrettyTable
+
+for label, data in (('Word', word),
+    	   	   ('Screen Name', screen_names),
+		   ('Hashtag', hashtags))
+	pt = PrettyTable(field_names = [label, 'Count'])
+	c = Counter(data)
+	[pt.add_row(kv) for kv in c.most_common()[:10]]
+	pt.align[label], pt.align['Count'] = 'l', 'r' # set column alignment
+	print pt
+```
+finding most popular retweets
+```python
+retweets = [
+	   # store out a tuple of these three values...
+	   (status['retweet_count'],
+	    status['retweeted_status']['user']['screen_name'],
+	    status['text'])
+
+	    # ... for each status ...
+	    for status in statuses
+
+	    # ... so long as the status meets this condition
+	      if status.has_key('retweeted_status')
+	   ]
+
+# slice off the first 5 from the sorted results and display each item in the tuple
+pt = PrettyTable(field_names=['Count', 'Screen Name', 'Text'])
+[pt.add_row(row) for row in sorted(retweets, reverse=True)[:5]]
+pt.max_width['Text'] = 50
+pt.align = 'l'
+print(pt)
+```
 ### Searching for Tweets
 
 ## Analyzing Tweets
